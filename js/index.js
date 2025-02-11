@@ -1,6 +1,6 @@
 AOS.init();
 
-let timeTimeOut = 3500;
+let timeTimeOut = 1000;
 let time = 300;
 
 const animation_1 = () => {
@@ -33,8 +33,8 @@ window.onscroll = function () {
 
 //#region DETETCTAR DARK-MODE EN EL NAVEGADOR
 const favicon = document.querySelector("#favicon");
-let logo = "assets/crown_logo.png"
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) logo = "assets/crown_logo_white.png"
+let logo = "assets/crown_logo.webp";
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) logo = "assets/crown_logo_white.webp"
 favicon.href = logo;
 //#endregion DETETCTAR DARK-MODE EN EL NAVEGADOR
 

@@ -5,7 +5,6 @@ let time = 300;
 
 const animation_1 = () => {
    document.querySelector("#intro_logo").classList.add("d-none");
-   // document.querySelector("#hero").classList.remove("d-none");
 }
 const animation_2 = () => {
    document.querySelector("#hero").classList.add("fade_in");
@@ -17,29 +16,15 @@ const animation_3 = () => {
    document.querySelector("body").classList.remove("scroll-y-none");
 }
 
-
-
-
-//#region EFECTO PARALLAX
 window.onscroll = function () {
    let position = window.pageYOffset || document.documentElement.scrollTop;
    let img_hamburger_1 = document.getElementById("img_hamburger_1");
    let section_hamburgers = document.getElementById("section_hamburgers");
-   // console.log(section_hamburgers.style);
-   // img_hamburger_1.style.bottom = `${position * 0.01}px` ;
 }
-//#endregion EFECTO PARALLAX
-
-
-//#region DETETCTAR DARK-MODE EN EL NAVEGADOR
 const favicon = document.querySelector("#favicon");
 let logo = "assets/crown_logo.webp";
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) logo = "assets/crown_logo_white.webp"
 favicon.href = logo;
-//#endregion DETETCTAR DARK-MODE EN EL NAVEGADOR
-
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
    document.querySelector("body").classList.add("scroll-y-none");

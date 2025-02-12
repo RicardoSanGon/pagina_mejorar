@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
    document.querySelector("#img_hero_2").classList.remove("img_right_left");
 
    const animations = () => {
-      setTimeout(() => animation_1(), timeTimeOut);
+      setTimeout(() => animation_1(), 1);
       setTimeout(() => animation_2(), timeTimeOut += time);
-      setTimeout(() => animation_3(), timeTimeOut += time + 1000);
+      setTimeout(() => animation_3(), timeTimeOut += time);
    }
    animations();
 })

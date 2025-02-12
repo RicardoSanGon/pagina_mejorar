@@ -1,7 +1,7 @@
 AOS.init();
 
-let timeTimeOut = 1000;
-let time = 300;
+let timeTimeOut = 5;
+let time = 5;
 
 const animation_1 = () => {
    document.querySelector("#intro_logo").classList.add("d-none");
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
    const animations = () => {
       setTimeout(() => animation_1(), timeTimeOut);
       setTimeout(() => animation_2(), timeTimeOut += time);
-      setTimeout(() => animation_3(), timeTimeOut += time + 2500);
+      setTimeout(() => animation_3(), timeTimeOut += time + 1000);
    }
    animations();
 })
